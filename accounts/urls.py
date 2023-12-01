@@ -3,7 +3,7 @@ from .views import home, products, customer
 
     
 urlpatterns = [
-    path('', home),
-    path('products/', products),
-    path('customer/<str:pk>', customer),
+    path('', home, name="home"),
+    path('products/', products, name="products"),
+    path('customer/<str:pk>', customer, name="customer"),
 ]
